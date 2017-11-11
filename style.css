@@ -1,0 +1,420 @@
+/*
+Theme Name: Marek Michalski
+Description: A custom theme built for Marek Michalski
+Author URI: http://jetrail.co
+Author: Jake Larkin;
+Contact: jake@jetrail.co;
+Version: 1.0
+Tags: responsive, marek, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+/* Table of Contents and Order
+0. Wordpress Core
+1. Universal
+2. Header
+3. Home Page
+4. Footer
+5. 404 Page
+
+
+For all styling regarding screen size changing and mobile optimization, see mobilize.css
+*/
+
+@import url('css/import-font.css');
+@import url('css/bootstrap.css');
+@import url('css/bootstrap-theme.css');
+
+/*----------------------------------------------  0. Wordpress Core  ----------------------------------------------  */
+
+
+
+/*----------------------------------------------  1. Universal  ----------------------------------------------  */
+
+body { 
+    color: #202020;
+    background-color: #F8F8F8;
+    font-family: 'Avenir';
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+.container.slim{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.more-margin-25{
+	margin-top:25px;
+	margin-bottom:25px;
+}
+.more-margin-50{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.more-margin-75{
+	margin-top:75px;
+	margin-bottom:75px;
+}
+.more-margin-100{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+.more-margin-125{
+	margin-top:125px;
+	margin-bottom:125px;
+}
+.more-margin-150{
+	margin-top:150px;
+	margin-bottom:150px;
+}
+.more-margin-175{
+	margin-top:175px;
+	margin-bottom:175px;
+}
+.more-margin-200{
+	margin-top:200px;
+	margin-bottom:200px;
+}
+.no-padding{
+	padding: 0px;
+}
+.hide-stuff{
+	display:none;
+}
+input,textarea{
+	-webkit-appearance: none;
+	outline: none;
+	font-family: .AppleSystemUIFont;
+	font-size: 18px;
+	color: #7D7D7D;
+	padding: 14px;
+	transition: all 0.3s ease-in-out;
+}
+a{
+	transition: all 0.3s ease-in-out;
+}
+button{
+	outline: none;
+}
+.opacity-hover:hover{
+	opacity: 0.7
+}
+.opacity-hover{
+	-webkit-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.scale-01:hover{
+	transform: scale(1.01);
+}
+.scale-02:hover{
+	transform: scale(1.02);
+}
+.scale-03:hover{
+	transform: scale(1.03);
+}
+.scale-04:hover{
+	transform: scale(1.04);
+}
+.scale-05:hover{
+	transform: scale(1.05);
+}
+.scale-10:hover{
+	transform: scale(1.10);
+}
+.scale-01,.scale-02,.scale-03,.scale-04,.scale-05,.scale-10{
+	-webkit-transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.white{
+	color: #fff;
+}
+
+/* ----------------------------------------------  2. Header  ------------------------------------------------  */
+nav{
+	background-color: #F8F8F8;
+	height: 53px;
+}
+nav.navbar{
+	border-radius:0px;
+	border:0px;
+	margin-bottom: 0px;
+}
+nav ul.navbar-nav{
+	list-style: none;
+	float: none;
+	text-align: center;
+}
+nav ul.menu{
+	padding-left: 0px;
+}
+nav ul li{
+	display: inline-block;
+	width: 120px;
+}
+nav ul.menu li:nth-child(2){
+	margin-right: 120px;
+}
+nav ul li a{
+	padding-top: 16px;
+	display: block;
+	font-family: Avenir;
+	font-size: 14px;
+	color: #000000;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+nav ul li a:hover{
+	color: #3023AE;
+	text-decoration: none;
+}
+nav span#logo-block{
+	height: 68px;
+	position: absolute;
+	z-index: 100;
+	top: 20px;
+	left: 50%;
+	margin-left: -34px;
+	background: #F8F8F8;
+	border: 1px solid white;
+	border-radius: 34px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+nav span#logo-block img{
+	height: 68px;
+}
+/*-----------------------------------------------  3. Home Page  ----------------------------------------------  */
+#front-page #hero-text{
+	background-size: cover;
+	position: relative;
+	height: 70%;
+	min-height: 425px;
+}
+#front-page #hero-text #hero-filter{	
+	background-image: linear-gradient(-135deg, #3023AE 0%, #C86DD7 79%);
+	opacity: 0.33;
+	height: 100%;
+}
+#front-page #hero-text #hero-content{
+	z-index: 10;
+	position: absolute;
+	top: 141px;
+	left:50%;
+	margin-left: -305px;
+}
+#front-page #hero-text .big-header{
+	font-family: Montserrat-Regular;
+	font-size: 72px;
+	color: #FFFFFF;
+}
+#front-page #hero-text .hero-text{
+	margin-top: 41px;
+	font-family: AvenirNext-UltraLight;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+#front-page #hero-text .social-links{
+	position: absolute;
+	bottom: 14px;
+	left: 14px;
+}
+#front-page #hero-text .social-links a{
+	margin-right: 5px;
+}
+#front-page #quote{
+	margin-top: 63px;
+}
+#front-page #quote .quote{
+	font-family: Palatino-Italic;
+	font-size: 28px;
+	color: #000000;
+	line-height: 34px;
+}
+#front-page #quote .quote strong,
+#front-page #quote .quote em{
+	font-family: Palatino-ItalicBold;
+}
+#front-page #quote .quoted-person{
+	font-family: Montserrat-Regular;
+	font-size: 14px;
+	color: #000000;
+	margin-top: 15px;
+}
+#front-page hr,footer hr{
+	border-color: #3023AE;
+}
+#front-page .content-padding{
+	margin: 18px 30px;
+}
+#front-page .content-header{
+font-family: Avenir-Heavy;
+font-size: 24px;
+color: #4A4A4A;
+}
+#front-page .content-text{
+	font-family: Montserrat-Light;
+	font-size: 14px;
+	color: #7D7D7D;
+	line-height: 32px;
+}
+#front-page .skill-col{
+	margin-top: 58px;
+	text-align: center;
+}
+#front-page .skill-col img{
+	height: 120px;
+	width: auto;
+	margin: auto;
+}
+#front-page .skill-col .skill-heading{
+	margin-top: 60px;
+	margin-bottom: 25px;
+	margin-left: 40px;
+	font-family: Avenir-Heavy;
+	font-size: 24px;
+	color: #4A4A4A;
+	text-align: left;
+}
+#front-page .skill-col .skill-list{
+	font-family: Montserrat-Light;
+	font-size: 14px;
+	color: #000000;
+	line-height: 32px;
+	text-align: left;
+}
+#front-page #second-image{
+	margin: 55px 0px;
+	height: 289px;
+	background-size: cover;
+}
+#front-page .image-filter{
+	background-image: linear-gradient(-134deg, #23ADAE 0%, #9382CA 68%, #C071D5 95%, #C170D6 95%, #C86DD7 100%);
+	height: 100%;
+	opacity: 0.48;
+}
+#front-page .buttons{
+	float: right;
+	margin-top: 23px;
+}
+#front-page .buttons a{
+	display: block;
+	border-radius: 7px;
+	border: 2px solid #3023AE;
+	padding: 14px 10px;
+	font-family: Montserrat-Light;
+	font-size: 20px;
+	color: #3023AE;
+	transition: all 0.3s ease-in-out;
+}
+#front-page .buttons a:hover,
+#front-page .buttons a:active{
+	color: white;
+	background-color: #3023AE;
+	text-decoration: none;
+}
+#front-page #portfolio{
+	margin-top: 93px;
+	margin-bottom: 86px;
+	background-color: #D2D2D2;
+	height: 425px;
+}
+#front-page .project-header{
+	margin-top: 25px;
+	margin-left: 25px;
+	font-family: Montserrat-Bold;
+	font-size: 24px;
+	color: #4A4A4A;
+}
+#front-page #portfolio .project-header{
+	margin-bottom: 30px;
+	margin-left: 65px;
+}
+#front-page #portfolio .project-well{
+	height: 251px;
+	width: 251px;
+	background-color: #F8F8F8;
+	margin:auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+#front-page #portfolio .project-well img{
+	align-self: center;
+}
+#front-page #portfolio a{
+	float: right;
+	font-family: Montserrat-Light;
+	font-size: 24px;
+	color: #000000;
+	margin-right: 65px;
+	margin-top: 25px;
+}
+#front-page #portfolio a:hover{
+	text-decoration: none;
+}
+#front-page #contact-form .project-header{
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+#front-page #contact-form input,
+#front-page #contact-form textarea{
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 8px;
+	border: 2px solid #3023AE;
+}
+#front-page #contact-form .left input{
+	width: 88%;
+	float: left;
+}
+#front-page #contact-form input{
+	height: 50px;
+	margin-bottom: 29px;
+	width: 88%;
+	float:right;
+}
+#front-page #contact-form textarea{
+	margin-top: 18px;
+	margin-bottom: 41px;
+	z-index: 50;
+}
+#front-page #contact-form input[type="submit"]{
+	width: 107px;
+	color: white;
+	border: #3023AE;
+	border: 2px solid #3023AE;
+	background-color: #3023AE;
+	margin-right: 15px;
+}
+#front-page #contact-form input[type="submit"]:hover{
+	background-color: transparent;
+	color: #3023ae;
+}
+#front-page #contact-form{
+	margin-bottom: 123px;
+}
+#front-page #contact-form textarea:focus,
+#front-page #contact-form input:focus{
+	border-color: #C86DD7;
+	opacity: 
+}
+textarea::-webkit-input-placeholder { transition: all 0.3s ease-in-out;  }
+textarea:-moz-placeholder { transition: all 0.3s ease-in-out; }
+textarea:focus::-webkit-input-placeholder { opacity:0.5; }
+textarea:focus:-moz-placeholder { opacity:0.5; }
+input::-webkit-input-placeholder { transition: all 0.3s ease-in-out;  }
+input:-moz-placeholder { transition: all 0.3s ease-in-out; }
+input:focus::-webkit-input-placeholder { opacity:0.5; }
+input:focus:-moz-placeholder { opacity:0.5; }
+/*-----------------------------------------------  4. Footer  ----------------------------------------------  */
+footer .footer-text{
+	text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 20px;
+	color: #E5E5E5;
+	margin: 60px 0px;
+
+}
+
+/*-----------------------------------------------  5. 404 Page  ----------------------------------------------  */
+

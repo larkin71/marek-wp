@@ -1,0 +1,73 @@
+/* This file is strictly for editing styling on different screen sizes.
+
+Author: Jake Larkin  /  @jakelarkin71
+Contact: jake@jetrail.co
+Date of Edit: 8/28/2016
+
+The screen breaks are using Bootstrap's default values
+
+-Extra small devices (phones, less than 768px)
+-Small devices (tablets, 768px and up)
+-Medium devices (desktops, 992px and up)
+-Large devices (large desktops, 1200px and up) 
+
+
+This Styling sheet will have styling specific to each:
+	-Specific to each device size(4)
+	-Specific to screen size up to (3) 
+*/
+
+/* ----------------------------------------------  For XS Only  ----------------------------------------------  */
+@media (max-width: 768px) {
+	html.hide-x-y,
+	body.hide-x-y{
+		overflow: hidden !important;
+		position: relative !important;
+		height: 100% !important;
+	}
+
+/* ----------------------------------------------  For SM Only  ----------------------------------------------  */
+@media (max-width: 992px) and (min-width: 768px){
+	
+
+}
+
+/* ----------------------------------------------  For MD Only  ----------------------------------------------  */
+@media (max-width: 1200px) and (min-width: 992px){
+	
+}
+
+/* ----------------------------------------------  For LG Only  ----------------------------------------------  */
+@media (min-width: 1200px){
+
+}
+
+
+
+
+/* ----------------------------------------------  For XS and SM Only  ----------------------------------------------  */
+@media (max-width: 992px){
+	
+}
+
+
+/* ----------------------------------------------  For XS, SM and MD Only  ----------------------------------------------  */
+@media (max-width: 1200px){
+	
+}
+
+
+/* ----------------------------------------------  For SM and MD Only  ----------------------------------------------  */
+@media (min-width: 768px) and (max-width: 1200px){
+
+}
+
+/* ----------------------------------------------  For MD and LG Only  ----------------------------------------------  */
+@media (min-width: 992px){
+	
+}
+
+/* ----------------------------------------------  For SM, MD and LG Only  ----------------------------------------------  */
+@media (min-width: 768px){
+	
+}
